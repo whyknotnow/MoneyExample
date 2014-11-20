@@ -1,16 +1,16 @@
 package test;
 
 import static org.junit.Assert.*;
+import main.Franc;
 import main.Money;
 
 import org.junit.Test;
 
-public class testCurrency {
+public class testDifferentClassEquality {
 
 	@Test
 	public void test() {
-		assertEquals("USD", Money.dollar(1).currency());
-		assertEquals("CHF", Money.franc(1).currency());
+		assertTrue(new Money(10,"CHF").equals(new Franc(10,"CHF")));
 	}
 
 }
