@@ -1,7 +1,6 @@
 package test;
 
 import static org.junit.Assert.assertEquals;
-import main.Dollar;
 import main.Money;
 
 import org.junit.Test;
